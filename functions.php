@@ -20,6 +20,12 @@ function elementor_hello_theme_setup() {
 }
 add_action( 'after_setup_theme', 'elementor_hello_theme_setup' );
 
+add_action( 'after_setup_theme', 'register_main_menu' );
+
+function register_my_menu() {
+  register_nav_menu( 'primary', __( 'Primary Menu', 'theme-slug' ) );
+}
+
 // Theme Scripts & Styles
 function elementor_hello_theme_scripts_styles() {
 	wp_enqueue_style( 'elementor-hello-theme-style', get_stylesheet_uri() );
