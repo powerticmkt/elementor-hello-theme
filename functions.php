@@ -22,7 +22,7 @@ add_action( 'after_setup_theme', 'elementor_hello_theme_setup' );
 
 add_action( 'after_setup_theme', 'register_main_menu' );
 
-function register_my_menu() {
+function register_main_menu() {
   register_nav_menu( 'primary', __( 'Primary Menu', 'theme-slug' ) );
 }
 
