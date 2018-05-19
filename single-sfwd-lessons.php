@@ -5,7 +5,7 @@
 <main id="main" class="site-main" role="main">
 
 	<div class="page-content">
-		<?php the_content(); ?>
+		<?php echo do_shortcode('[INSERT_ELEMENTOR id="15396"]'); ?>
 	</div>
 
 </main>
